@@ -1,0 +1,16 @@
+{
+  "name": "team3-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "run-p serve watch",
+    "sass": "sass --load-path=node_modules src/scss:src/stylesheets"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
+}
