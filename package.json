@@ -1,16 +1,18 @@
 {
-  "name": "team3-project",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "run-p serve watch",
-    "sass": "sass --load-path=node_modules src/scss:src/stylesheets"
+    "sass": "sass --load-path=node_modules cafe/src/scss:cafe/src/stylesheets",
+    "serve": "five-server",
+    "watch": "npm run sass -- --watch",
+    "clean": "rimraf cafe/src/stylesheets",
+    "build": "npm run sass -- --no-source-map --style compressed"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "sass": "^1.69.5"
+    "@euid/scss-mixins": "^0.2.0",
+    "five-server": "^0.3.1",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.5",
+    "sass": "^1.69.5",
+    "sass-reset": "^1.0.4"
   }
 }
