@@ -2,7 +2,7 @@
   "scripts": {
     "dev": "run-p tailwind:watch serve",
     "serve": "five-server",
-    "tailwind": "tailwind -i ./src/css/input.css -o ./src/css/output.css",
+    "tailwind": "tailwind -i ./cafe/src/css/input.css -o ./cafe/src/css/output.css",
     "tailwind:watch": "npm run tailwind -- --watch",
     "tailwind:build": "npm run tailwind -- --minify",
     "clean": "rimraf css/"

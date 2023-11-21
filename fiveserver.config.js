@@ -1,6 +1,6 @@
 module.exports = {
   port: 8087,
-  root: 'cafe/',
+  root: 'cafe/src/',
   open: ['index.html'],
   host: 'localhost',
   browser: 'chrome',

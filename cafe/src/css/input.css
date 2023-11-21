@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.site-link{
+  @apply no-underline inline-block
+}
+
+.deco-link::before{
+  content: ':';
+  @apply pl-3 pr-3
+}
