@@ -1,19 +1,90 @@
+/* agent style 초기화 */
+li {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+body,
+body * {
+  /* box-sizing: content-box; */
+}
+/* css styles */
+body {
+  background: linear-gradient(#a2a2a2, #b3b8ef) no-repeat;
+  margin: 0;
+}
+
 .header {
-  background-color: red;
-  height: 200px;
+  background-color: white;
+  height: 15vh;
+  width: 80%;
+  border-radius: 0 0 15px 15px;
+
+  position: relative;
+  margin: 0 auto;
+}
+
+.logo {
+  padding-left: 30px;
+}
+
+.member {
+  display: flex;
+  flex-flow: row wrap;
+  position: absolute;
+  margin-top: 0;
+  top: 5%;
+  right: 8%;
+}
+
+.navigation {
+  height: 4rem;
+  width: 85%;
+  margin: 0px auto;
+  background-color: #b3b8ef;
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  top: 25%;
+  border-radius: 0 0 5px 5px;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.menu-button {
+  width: 150px;
+  line-height: 4rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  border-left: 1px solid white;
+  color: white;
+  font-weight: 700;
 }
 
 .visual {
   background-color: aqua;
   height: 200px;
+  width: 80%;
 }
 
 .main {
   background-color: blue;
   height: 200px;
+  width: 80%;
 }
 
 .footer {
   background-color: brown;
   height: 200px;
+  width: 80%;
 }
