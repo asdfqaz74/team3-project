@@ -1,0 +1,19 @@
+.header {
+  background-color: red;
+  height: 200px;
+}
+
+.visual {
+  background-color: aqua;
+  height: 200px;
+}
+
+.main {
+  background-color: blue;
+  height: 200px;
+}
+
+.footer {
+  background-color: brown;
+  height: 200px;
+}
