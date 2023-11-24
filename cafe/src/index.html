@@ -1,42 +1,92 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹카페</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/output.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>웹카페</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/output.css" />
-</head>
+  <body class="min-h-full bg-slate-500">
+    <header class="bg-white rounded-b-md h-[123px] w-[880px] px-[30px] mx-auto">
+      <!-- 사이트맵  -->
+      <div class="flex flex-row justify-end pt-2 mb-2">
+        <ul class="flex flex-row">
+          <li>
+            <a href="/" class="site-link">홈</a>
+          </li>
+          <li class="deco-link">
+            <a href="/" class="site-link">로그인</a>
+          </li>
+          <li class="deco-link">
+            <a href="/" class="site-link">회원가입</a>
+          </li>
+          <li class="deco-link">
+            <a href="/" class="site-link">사이트맵</a>
+          </li>
+          <li class="deco-link">
+            <a href="/" class="site-link">ENGLISH</a>
+          </li>
+        </ul>
+      </div>
 
-<body class="min-h-full">
-  <header class="bg-blue-300">
-    <div class="flex flex-row flex-nowrap justify-end">
-      <ul>
-        <li>
-          <a href="/" class="site-link">홈</a>
-        </li>
-        <li class="deco-link">
-          <a href="/" class="site-link">로그인</a>
-        </li>
-        <li class="deco-link">
-          <a href="/" class="site-link">회원가입</a>
-        </li>
-        <li class="deco-link">
-          <a href="/" class="site-link">사이트맵</a>
-        </li>
-        <li class="deco-link">
-          <a href="/" class="site-link">ENGLISH</a>
-        </li>
-      </ul>
-    </div>
-  </header>
-  <main>
-    <div class="bg-blue-700">메인</div>
-  </main>
-  <footer>
-    푸터
-  </footer>
-</body>
-
+      <!-- 메뉴  -->
+      <div class="navi flex items-center justify-center">
+        <div
+          class="main-menu background border-t-black border-solid border-2 rounded-b-md w-[880px] h-[45px]"
+        >
+          <div
+            class="home flex flex-row flex-nowrap h-auto items-center justify-center"
+          >
+            <a href="/" class="flex items-center justify-center flex-grow"
+              ><img src="./images/logo.png" alt=""
+            /></a>
+            <ul class="flex flex-row gap-x-4 items-center flex-nowrap mx-auto">
+              <li class="before:border text-2xl">
+                <button
+                  type="button"
+                  class="menu-text menu-shadow text-base leading-5"
+                >
+                  HTML에 대해
+                </button>
+              </li>
+              <li class="before:border text-base">
+                <button type="button" class="menu-text menu-shadow">
+                  CSS에 대해
+                </button>
+              </li>
+              <li class="before:border text-base">
+                <button type="button" class="menu-text menu-shadow">
+                  웹표준
+                </button>
+              </li>
+              <li class="before:border text-base">
+                <button type="button" class="menu-text menu-shadow">
+                  웹 접근성
+                </button>
+              </li>
+              <li class="before:border text-base">
+                <button type="button" class="menu-text menu-shadow">
+                  묻고 답하기
+                </button>
+              </li>
+              <li class="before:border text-base">
+                <button type="button" class="menu-text menu-shadow">
+                  자료실
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="bg-blue-700">메인</div>
+    </main>
+    <footer class="bg-[#ffafaf]">푸터</footer>
+  </body>
 </html>
