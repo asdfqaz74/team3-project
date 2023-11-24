@@ -20,8 +20,8 @@ body {
 
 .header {
   background-color: white;
-  height: 15vh;
-  width: 80%;
+  height: 8rem;
+  width: 80rem;
   border-radius: 0 0 15px 15px;
 
   position: relative;
@@ -29,7 +29,8 @@ body {
 }
 
 .logo {
-  padding-left: 30px;
+  padding-top: 10px;
+  padding-left: 35px;
 }
 
 .member {
@@ -38,25 +39,32 @@ body {
   position: absolute;
   margin-top: 0;
   top: 5%;
-  right: 8%;
+  right: 6%;
 }
 
-.colon::after {
-  content: " : ";
+.member li::after {
+  content: " ";
+  white-space: pre;
 }
 
 .navigation {
   height: 4rem;
-  width: 85%;
+  width: 70rem;
   margin: 0px auto;
-  background-color: #b3b8ef;
-  border-top: 2px solid black;
+  background: rgb(252, 176, 69);
+  background: linear-gradient(
+    360deg,
+    rgba(252, 176, 69, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  box-shadow: 0 -1px 1px 0px black;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   position: relative;
   top: 25%;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 15px 15px;
 }
 
 .menu {
@@ -66,12 +74,13 @@ body {
 
 .menu-button {
   width: 150px;
-  line-height: 4rem;
-  font-size: 1rem;
+  line-height: 3.9rem;
+  font-size: 1.2rem;
   background-color: transparent;
   border: none;
   border-left: 1px solid white;
   color: white;
+  -webkit-text-stroke: 1px black;
   font-weight: 700;
 }
 
