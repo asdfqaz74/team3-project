@@ -41,8 +41,8 @@ body {
   right: 8%;
 }
 
-.colon ::after {
-  content: " ";
+.colon::after {
+  content: " : ";
 }
 
 .navigation {
