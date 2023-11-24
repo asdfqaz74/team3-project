@@ -41,6 +41,10 @@ body {
   right: 8%;
 }
 
+.colon ::after {
+  content: " ";
+}
+
 .navigation {
   height: 4rem;
   width: 85%;
