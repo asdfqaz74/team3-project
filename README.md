@@ -1,4 +1,4 @@
-# tema3-project
+# team3-project
 
 ## 브랜치명 - 사용자
 
@@ -6,7 +6,7 @@ kjs - 진성님</br>
 
 yeseul - 예슬님
 
-hyunshu - 현서님
+hyunsuh - 현서님
 
 yunzoo - 윤주님
 
