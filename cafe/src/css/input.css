@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.bg {
+  background: linear-gradient(to bottom, rgba(165,165,165,1) 0%,rgba(237,237,237,1) 100%) no-repeat;
+}
 .background {
   background: linear-gradient(to bottom, rgba(239,194,47,1) 0%,rgba(232,134,44,1) 30%,rgba(232,134,44,1) 70%,rgba(239,194,47,1) 100%);
 }
@@ -10,12 +14,93 @@
 }
 .deco-link::before{
   content: ':';
-  @apply pl-3 pr-3
+  @apply pl-3 pr-3 
 }
 .menu-text{
-  @apply text-white pl-3
+  @apply text-white px-3 border-l border-l-white
 }
 
 .menu-shadow {
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.sub {
+  @apply absolute top-4 whitespace-nowrap text-[12px] hidden
+}
+
+.is-active .menu-text {
+  @apply bg-yellow-200
+}
+
+.is-active .menu-text::after {
+  @apply block after:content-[""] bg-black h-[2px]
+}
+
+.is-active .relative .sub {
+  @apply block
+}
+
+.sub a::before {
+  content: '\e800';
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  margin-left: .2em;
+}
+
+
+.animation::before , .animation::after {
+  @apply content-[""] absolute top-0 left-0 w-full h-full 
+}
+
+.animation::before , .animation::after{
+  animation: fadeEffect 2s infinite alternate ease-in-out running;
+}
+
+@keyframes fadeEffect {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+/* .animation::before {
+  background: url(./../images/ani_flower_01.png) no-repeat 0 -10px, url(./../images/ani_flower_02.png) no-repeat 550px 0;
+} */
+
+.before\:bg-flower-01::before {
+  @apply bg-no-repeat /* right-0 bottom-[-10px] */
+}
+
+.visual-text {
+  position: absolute;
+  animation-name: moveEffect;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@keyframes moveEffect {
+  0%{
+    font-size: 12px;
+    color: rgba(0,0,0,0);
+    top: 0;
+    left: 0;
+  }
+  100%{
+    font-size: 24px;
+    color: rgba(0,0,0,1);
+    top: 75px;
+    left: 400px;
+  }
 }
